@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/options1"
+        android:checkableBehavior="none">
+    <item
+        android:title="Notes"
+        android:id="@+id/notes"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        />
+
+<item
+    android:title="Previous Year Ques Papers"
+    android:id="@+id/pqp"
+    android:icon="@drawable/ic_receipt_black_24dp"
+
+    />
+    <item
+        android:title="Questionaire"
+        android:id="@+id/ques"
+        android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+        />
+        <item
+            android:title="Change Password"
+            android:id="@+id/change"
+            android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+            />
+    <item
+        android:title="About"
+        android:id="@+id/about"
+        android:icon="@drawable/ic_info_black_24dp"
+        />
+    <item
+        android:title="Suggestion"
+        android:id="@+id/suggestion"
+        android:icon="@drawable/ic_mode_edit_black_24dp"
+        />
+    <item
+        android:title="Logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_lock_black_24dp"
+        />
+    </group>
+    <group
+        android:id="@+id/options12"
+        android:checkableBehavior="none">
+        <item
+            android:title="Share"
+            android:id="@+id/share"
+            android:icon="@drawable/ic_share_black_24dp"
+            />
+        <item
+            android:id="@+id/like"
+            android:title="Like"
+            android:icon="@drawable/ic_thumb_up_black_24dp"
+            />
+        </group>
+
+
+
+</menu>

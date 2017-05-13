@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/md_keylines"
+    app:cardBackgroundColor="#2d5d82"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="@dimen/md_keylines"
+    android:layout_marginRight="@dimen/md_keylines"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/faculty_name"
+            android:textSize="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#fff"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/college_name"
+            android:textSize="15dp"
+            android:layout_below="@id/faculty_name"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            />
+
+
+        <ImageButton
+            android:id="@+id/download"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="55dp"
+            android:layout_below="@+id/college_name"
+            android:layout_alignParentRight="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:tint="#fff" />
+
+        <!--<ImageButton
+            android:id="@+id/faq"
+            android:layout_width="@dimen/cards_button_width"
+            android:layout_height="@dimen/cards_button_height"
+            android:layout_marginRight="@dimen/md_keylines"
+            android:layout_below="@+id/college_name"
+            android:layout_toLeftOf="@id/download"
+            style="?android:attr/borderlessButtonStyle"
+            android:tint="#fff" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/avg_rating"
+            android:layout_below="@id/college_name"
+            android:text="2.5 Rating"
+            android:textColor="@color/star"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avg_rating"
+            android:id="@+id/rating_bar"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_below="@+id/rating_bar"
+            android:id="@+id/descr"
+            android:layout_marginLeft="15dp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

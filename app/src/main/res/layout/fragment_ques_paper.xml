@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:textColor="@color/colorPrimary"
+        android:text="solved paper for 2015-16"
+        android:textSize="17dp"
+        android:layout_marginLeft="10dp"
+        />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="40dp"
+       android:textColor="#0866c6"
+       android:text="Download"
+       android:id="@+id/download_paper"/>
+</LinearLayout>

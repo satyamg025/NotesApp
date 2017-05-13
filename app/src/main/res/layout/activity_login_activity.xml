@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:titleTextColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="22dp"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:background="@drawable/qw"
+android:paddingTop="80dp"
+tools:context="com.example.satyam.myapplication.login_activity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/no"
+        android:layout_marginLeft="110dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NoteBox"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="126dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/ic_account_circle_white_24dp"/>
+       <!-- <ImageView
+            android:layout_width="30dp"
+            android:background="#f8f8ff"
+            android:layout_height="59dp"
+            android:layout_marginTop="151dp"/>-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:hintTextAppearance="@style/white"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="135dp">
+
+        <EditText
+        android:layout_width="270dp"
+        android:backgroundTint="#f8f8ff"
+        android:layout_height="58.5dp"
+        android:textColor="#fff"
+
+        android:layout_marginTop="151dp"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/usr_name"
+        android:hint="Username"
+        android:textSize="21dp"
+        />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/ic_lock_white_24dp"
+            android:layout_marginTop="230dp"/>
+        <!--<ImageView
+            android:layout_width="32dp"
+            android:background="#f8f8ff"
+            android:layout_height="63.5dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="211.999dp"/>-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/white"
+            android:layout_height="75dp"
+            android:id="@+id/input_roll_layout"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="201dp">
+
+
+       <EditText
+        android:layout_width="268dp"
+        android:layout_height="64dp"
+           android:layout_marginTop="0dp"
+        android:textColor="#fff"
+        android:backgroundTint="#fff"
+           app:theme="@style/white"
+
+
+        android:layout_marginLeft="0dp"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="21dp"
+
+        />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="305dp"
+        android:layout_height="70dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/login"
+        android:textColor="#fff"
+        android:background="#00cc99"
+        android:onClick="invokeLogin"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_below="@id/login"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="160dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code"
+        android:layout_below="@id/login"
+        android:textColor="#fff"
+        android:id="@+id/qr"
+        android:textSize="15dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="45dp"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

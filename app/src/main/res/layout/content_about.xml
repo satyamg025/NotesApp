@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/app_bar_about">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designed And Developed By"
+        android:textSize="20dp"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <com.example.satyam.myapplication.RoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/satyam"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/satyam"
+            android:background="@drawable/img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satyam Gupta"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/link"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/link_sat"
+                android:autoLink="web"
+                android:textColorLink="#fff"
+                android:textSize="12dp"
+                android:text="https://www.linkedin.com/in/satyam-gupta-061445126"
+                android:layout_marginTop="70dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="190dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.example.satyam.myapplication.RoundedImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/pranjal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pranjal Gupta"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/link"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/link_pran"
+                android:autoLink="web"
+                android:textColorLink="#fff"
+                android:textSize="12dp"
+                android:text="https://www.linkedin.com/in/pranjal-gupta-21a025129"
+                android:layout_marginTop="70dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="190dp"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
